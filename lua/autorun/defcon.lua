@@ -1,6 +1,6 @@
 --
 -- defcon.lua
--- Defcon Level for MRP
+-- Defcon Level Addon for Garry's Mod
 --
 -- Created by CoollDave#0627 on 4/7/2020
 -- Copyright © 2020 CoollDave#0627. All rights reserved.
