@@ -1,6 +1,6 @@
 --
 -- defcon.lua
--- Defcon Level Addon for Garry's Mod
+-- Defcon Level for MRP
 --
 -- Created by CoollDave#0627 on 4/7/2020
 -- Copyright © 2020 CoollDave#0627. All rights reserved.
@@ -126,9 +126,9 @@ elseif CLIENT then
 		if createPanel then
 			-- Container panel
 			defconPanel = vgui.Create("DPanel")
-			defconPanel:SetSize(154, 362)
+			defconPanel:SetSize(154, 123)
 			defconPanel:SetDrawBackground(false)
-			defconPanel:SetPos(19*ScrW()/22, ScrH()/16)
+			defconPanel:SetPos(21*ScrW()/24, ScrH()/24)
 
 			-- Image load
 			img_defcon = vgui.Create("DImage", defconPanel)
@@ -156,7 +156,7 @@ elseif CLIENT then
 
 			defconSound:Play()
 
-			img_defcon:SetImage("defcon/defcon.png")
+			img_defcon:SetImage("defcon/offdefcon" .. readyLevel .. ".png")
 
 			draw.SimpleText("We are moving to:", "annoucebig", ScrW()/2, ScrH()/14, Color(255,56,56,150), TEXT_ALIGN_CENTER)
 			draw.SimpleText("DEFCON " .. readyLevel, "annoucebig", ScrW()/2, ScrH()/8, Color(255,56,56,150), TEXT_ALIGN_CENTER)
